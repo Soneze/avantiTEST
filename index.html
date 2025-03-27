@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVANTI - Sua Loja Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Promotional Bar -->
+    <div class="promo-bar">
+        <div class="container">
+            <p class="text-center text-white mb-0">
+                Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10
+            </p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-md-2">
+                    <a href="/" class="text-decoration-none">
+                        <h1 class="logo mb-0">AVANTI</h1>
+                    </a>
+                </div>
+                <!-- Search Bar -->
+                <div class="col-md-7">
+                    <div class="search-container">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Digite aqui o que você procura">
+                        <button class="search-button" onclick="handleSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div id="searchResult" class="mt-2 d-none"></div>
+                </div>
+                <!-- User Area -->
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="user-area me-4">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span>Olá,</span>
+                                <br>
+                                <span>Nome cliente!</span>
+                            </div>
+                        </div>
+                        <div class="cart-area">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-bars"></i> Todas as Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departamento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container-fluid p-0">
+            <div class="banner-content">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/600x400" alt="Roupas dobradas" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="banner-text p-5">
+                            <h2 class="display-1 fw-bold">SUPER<span class="fw-light">SALE</span></h2>
+                            <p class="text-primary">ITENS SELECIONADOS COM ATÉ</p>
+                            <h3 class="display-4 text-primary">50%OFF</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrivals py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3>Lançamentos</h3>
+                <a href="#" class="text-decoration-none">Ver mais</a>
+            </div>
+            
+            <!-- Swiper -->
+            <div class="swiper newArrivalsSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Product cards will be repeated -->
+                    <div class="swiper-slide">
+                        <div class="card product-card">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2">NOVO</span>
+                            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Produto">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum Dolor Sit Amet</h5>
+                                <p class="card-text">Consectetur Adipiscing Elit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More product slides will be added dynamically -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

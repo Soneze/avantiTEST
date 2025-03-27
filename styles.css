@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #0066FF;
+    --secondary-color: #333;
+    --light-gray: #f8f9fa;
+}
+
+/* Promotional Bar */
+.promo-bar {
+    background-color: var(--primary-color);
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+.search-container input {
+    padding-right: 40px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--primary-color);
+}
+
+/* User Area */
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.user-area i {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+/* Cart Area */
+.cart-area {
+    position: relative;
+}
+
+.cart-area i {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation */
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-link {
+    color: var(--secondary-color) !important;
+    padding: 1rem !important;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-color: var(--light-gray);
+}
+
+.banner-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner-text {
+    padding: 4rem;
+}
+
+/* Product Card */
+.product-card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card .card-body {
+    padding: 1rem 0;
+}
+
+.product-card .card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-card .card-text {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Swiper Configuration */
+.swiper {
+    padding: 20px 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .banner-text {
+        padding: 2rem;
+    }
+    
+    .user-area span {
+        display: none;
+    }
+    
+    .nav-link {
+        padding: 0.5rem !important;
+    }
+} 
