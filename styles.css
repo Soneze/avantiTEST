@@ -154,4 +154,94 @@
     .nav-link {
         padding: 0.5rem !important;
     }
+}
+
+/* Mega Menu Dropdown */
+.mega-menu {
+    padding: 20px;
+    width: 800px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}
+
+.mega-menu .row {
+    margin: 0 -10px;
+}
+
+.mega-menu .col-md-4 {
+    padding: 0 15px;
+}
+
+.mega-menu .dropdown-header {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.mega-menu .dropdown-item {
+    padding: 8px 0;
+    color: var(--secondary-color);
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.mega-menu .dropdown-item:hover {
+    background: transparent;
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+/* Ensure dropdown works on hover */
+.nav-item.dropdown:hover .mega-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item.dropdown .nav-link {
+    position: relative;
+}
+
+.nav-item.dropdown .nav-link:after {
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+/* Responsive Adjustments for Mega Menu */
+@media (max-width: 992px) {
+    .mega-menu {
+        width: 100%;
+        transform: none;
+        left: 0;
+        position: static;
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
+
+    .mega-menu .row > div {
+        margin-bottom: 20px;
+    }
+
+    .mega-menu .dropdown-item {
+        padding: 8px;
+    }
+    
+    .nav-item.dropdown .nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 } 

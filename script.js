@@ -1,5 +1,6 @@
 // Initialize Swiper
 document.addEventListener('DOMContentLoaded', function() {
+    // Swiper initialization
     const swiper = new Swiper('.newArrivalsSwiper', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -25,6 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < 4; i++) {
         const slide = document.querySelector('.swiper-slide').cloneNode(true);
         swiperWrapper.appendChild(slide);
+    }
+
+    // Mobile dropdown handling
+    const dropdown = document.querySelector('.nav-item.dropdown');
+    const dropdownMenu = document.querySelector('.mega-menu');
+    
+    if (window.innerWidth < 992) {
+        dropdown.addEventListener('click', function(e) {
+            if (!dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.toggle('show');
+            }
+        });
     }
 });
 
